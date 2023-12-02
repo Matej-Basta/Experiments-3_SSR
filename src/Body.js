@@ -4,7 +4,7 @@ import Result from './Result';
 const Body = ({numberOfElements}) => {
     const computation = (value) => {
         let result = 0;
-        for (let i = 0; i < 1000000; i++) {
+        for (let i = 0; i < 50000; i++) {
             result += Math.sin(Math.sqrt(value * i)) / Math.log(value + 1);
         }
         return result;
